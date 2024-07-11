@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>일본 여행 가이드</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar-brand {
+      font-size: 24px; /* 폰트 사이즈 조정 */
+      font-weight: bold; /* 폰트 굵기 조정 */
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+    }
+    .navbar {
+      margin-bottom: 30px;
+    }
+    .section {
+      padding: 60px 0;
+    }
+    .bg-light {
+      background-color: #f8f9fa !important;
+    }
+    .bg-primary {
+      background-color: #007bff !important;
+      color: white;
+    }
+    .bg-secondary {
+      background-color: #FFFF33 !important;
+      color: black;
+    }
+    .bg-success {
+      background-color: #28a745 !important;
+      color: white;
+    }
+    .bg-info {
+      background-color: #33CCFF !important;
+      color: black;
+    }
+    h2 {
+      margin-bottom: 30px;
+    }
+    .carousel-inner img,
+    .attraction-item img {
+      width: 100%;
+      height: auto;
+    }
+    .modal-body img {
+      max-width: 100%;
+      height: auto;
+    }
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+    }
+    .attraction-item {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .btn-details {
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+    iframe {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- 내비게이션 바 - 항목을 변경하거나 추가할 수 있습니다 -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">중국 여행 가이드 - 10515 이건우</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#overview">개요</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#history">역사</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#attractions">관광지</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tips">여행 팁</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 개요 섹션 -->
+  <section id="overview" class="section bg-primary">
+    <div class="container">
+      <h2 class="text-center">개요</h2>
+      <p>중국은 아주 넓은 땅덩이를 갖고 있는 건 물론 세계 4대 문명으로 대표되는 오래된 역사와 그에 의한 풍부한 볼거리를 자랑하는 국가다. 중국의 광활한 국토는 다양한 기후와 지형을 갖추고 있어 유명한 관광지를 여럿 포함하고 있다.</p>
+      <!-- 이미지 슬라이드 - 이미지를 변경하려면 src 속성 값을 수정하세요 -->
+      <div id="overviewCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/중국사진1.jpg" class="d-block w-100" alt="중국 개요 1">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/중국사진2.webp" class="d-block w-100" alt="중국 개요 2">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/중국사진3.jpg" class="d-block w-100" alt="중국 개요 3">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/중국사진4.jpg" class="d-block w-100" alt="중국 개요 4">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/중국사진5.jpg" class="d-block w-100" alt="중국 개요 5">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#overviewCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">이전</span>
+        </a>
+        <a class="carousel-control-next" href="#overviewCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">다음</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 역사 섹션 -->
+  <section id="history" class="section bg-secondary">
+    <div class="container">
+      <h2 class="text-center">역사</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/중국역사사진.jpg" alt="중국 역사 1" class="img-fluid">
+            <p>진시황(기원전 259년 - 기원전 210년)은 중국 최초의 통일 제국인 진 왕조의 초대 황제로, 중앙집권체제를 확립하고 법가 사상을 바탕으로 강력한 통치를 시행했다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal1">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/중국역사사진2.jpg" alt="중국 역사 2" class="img-fluid">
+            <p>당 태종(唐太宗, 598년 - 649년)은 당 왕조의 황제로, 중국 역사상 가장 번영한 시기 중 하나를 이끌었으며, 문물교류와 문화발전에 큰 기여를 했다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal2">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/중국역사사진4.jpg" alt="중국 역사 3" class="img-fluid">
+            <p>마오쩌둥(毛泽东, 1893년 - 1976년)은 중국 공산당을 이끌어 1949년 중화인민공화국을 건국하고, 대약진운동과 문화대혁명을 주도한 현대 중국의 주요 정치 지도자이다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal3">상세보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 모달 - 역사 1 -->
+  <div class="modal fade" id="historyModal1" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel1">역사 1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/중국역사사진1.jpg" alt="중국 역사 1" class="img-fluid">
+          <p>고대 중국: 상 왕조와 주 왕조를 거쳐 진시황제가 중국을 최초로 통일했다. 한 왕조 시기에는 비단길을 통해 동서 교역이 활발해지고, 한자와 유교가 문화의 중심이 되었다. 고대 중국은 청동기 문화와 봉건제, 중앙집권체제가 주요 특징이다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 역사 2 -->
+  <div class="modal fade" id="historyModal2" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel2">역사 2</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/중국역사사진3.jpg" alt="중국 역사 2" class="img-fluid">
+          <p>중세: 당 왕조와 송 왕조 시기에 경제와 문화가 황금기를 맞이했습니다. 원 왕조는 몽골 제국의 일부로 동서 교류가 활발했으며, 명 왕조와 청 왕조는 중화 문화를 부흥시키고 외세의 침략에 맞서 싸웠습니다. 중세 중국은 통일과 분열을 반복하며 문화적, 경제적 발전을 이루었습니다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 역사 3 -->
+  <div class="modal fade" id="historyModal3" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel3">역사 3</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/중국역사사진5.webp" alt="중국 역사 3" class="img-fluid">
+          <p>근현대: 신해혁명으로 청 왕조가 무너지고 중화민국이 세워졌으나, 내전과 일본의 침략으로 혼란이 계속되었다. 1949년 중국 공산당이 내전에서 승리하여 중화인민공화국을 설립하고, 이후 개혁개방 정책을 통해 현대 중국으로 발전했다. 근현대 중국은 혁명과 개혁을 통해 급격한 사회적, 경제적 변화를 경험했다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 관광지 섹션 -->
+  <section id="attractions" class="section bg-success">
+    <div class="container">
+      <h2 class="text-center">관광지</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/베이징사진.jpg" alt="중국 관광지 1" class="img-fluid">
+            <p>중국의 수도인 베이징은 역사적인 유산과 아름다운 자연경관, 현대적인 시설이 잘 어우러져 역사와 현대문화가 공존하는 매력적인 곳으로 중국을 대표하는 도시 중에 하나이다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal1">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/상하이사진.jpg" alt="중국 관광지 2" class="img-fluid">
+            <p>상하이는 중국의 대표적인 국제도시로 중국에서 가장 높은 타워인 상하이타워가 있는 곳이자 중국에서 가장 인기있는 여행지 중 하나이다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal2">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/항저우사진.jpg" alt="중국 관광지 3" class="img-fluid">
+            <p>놀랄만한 자연의 아름다움과 잘 보존된 문화 명소가 있는 항저우는 중국에서 가장 큰 관광 명소 중 하나이다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal3">상세보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 모달 - 관광지 1 -->
+  <div class="modal fade" id="attractionModal1" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel1">관광지 1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/베이징사진2.webp" alt="중국 관광지 1" class="img-fluid">
+          <p>중국 베이징의 대표적인 관광지에는 명과 청 양대 왕조의 황궁인 자금성, 중국의 상징이라 할 수 있는 건축물인 천안문, 황제의 여름 별궁으로 세계 최대 규모를 자랑하며, 800년 가까운 역사가 있는 이화원, 중국의 대표적인 건축물이자  2,700km에 달하는 세계 7대 불가사의 건축물인 만리장성등이 있다. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 관광지 2 -->
+  <div class="modal fade" id="attractionModal2" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel2">관광지 2</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/상하이사진2.jpg" alt="중국 관광지 2" class="img-fluid">
+          <p>상하이에서 가볼 만한 곳에는 수많은 중국 정원 중에서도 가장 아름답고 섬세한 정원이자 400년의 역사를 갖고 있는 예원, 상하이의 화려한 야경을 잘 볼 수 있는 곳인 와이탄, 독립운동가들의 숨결을 느낄 수 있는 임시정부 유적지 등이 있다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 관광지 3 -->
+  <div class="modal fade" id="attractionModal3" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel3">관광지 3</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/항저우사진2.jpg" alt="중국 관광지 3" class="img-fluid">
+          <p>항저우의 대표적인 관광지에는 중국의 고전적 자연미를 상징하는 곳으로 유네스코 세계 문화 유산 2011개 구역으로 나누어진 광대한 호수 지역인 서호, 영어로 '영혼의 사찰'로 알려져 있으며 현지인과 해외 방문객 모두에게 사랑받는 불교 수도원인 영은사, 고대 항저우의 흔적이자 중국의 유서 깊은 상점을 볼 수 있는 허팡거리 등이 있다. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 여행 팁 섹션 -->
+  <section id="tips" class="section bg-info">
+    <div class="container">
+      <h2 class="text-center">여행 팁</h2>
+      <ul>
+        <li>방문하기 좋은 시기: 봄 (4~5월)과 가을 (9월~11월). 단  노동절 (5월 1일), 단오절 (음력 5월 5일), 중추절 (음력 8월 15일), 국경절 (10월 1일) 등 중국인구가 대규모로 이동하는 연휴에는 중국여행을 피하는 것이 좋다. </li>
+        <li>언어: 중국어. 영어는 거의 통용되지 않는다. </li>
+        <li>통화: 중국 위안.</li>
+        <li>교통: 중국이 경제개발을 하는 과정에서 교통인프라 확충에 엄청난 예산을 쏟아부었기 때문에 중국의 교통인프라는 세계적인 수준으로 좋다. </li>
+      </ul>
+      <div class="text-center">
+        <!-- 여기에 YouTube 동영상 링크를 추가하세요 -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d8dldmrfQVw?si=kTRx8kMGHihrGGsm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>     </div>
+    </div>
+  </section>
+
+  <footer class="text-center">
+    <p>&copy; 2024 일본 여행 가이드. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
